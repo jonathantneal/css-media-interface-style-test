@@ -1,0 +1,15 @@
+{
+  "name": "dark-mode-test",
+  "version": "1.0.0",
+  "description": "Test Dark Mode",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "opn": "^5.3.0",
+    "ws": "^5.2.0"
+  },
+  "scripts": {
+    "start:socket": "node --experimental-modules ./socket.mjs",
+    "start": "node --no-warnings --experimental-modules ./server.mjs --dev"
+  },
+  "private": true
+}

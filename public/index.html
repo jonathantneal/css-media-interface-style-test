@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<title>@Media Color-Scheme</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<script src="script.js"></script>
+	<style id="textarea">/* test */</style>
+	<body>
+		<header>
+			<h1>@Media Color-Scheme</h1>
+			<p>This is a test page filled with a few common HTML elements to be used to provide visual feedback.</p>
+			<p>To experience this website on a Mac, go to <a href="x-apple.systempreferences:com.apple.preference">System Preferences</a> > General, and then toggle “Use dark menu and Dock”.</p>
+		</header>
+		<section>
+			<h2>Inputs</h2>
+			<p>
+				<label for="textarea">Textarea</label>
+				<textarea rows="8" cols="48">:root {
+	--link: #0000d6;
+	--background-color: #fff;
+	--color: #000;
+}
+
+@media (color-scheme: dark) {
+	:root {
+		--link: #00c0ff;
+		--background-color: #000;
+		--color: #fff;
+	}
+}
+
+button, html, input, select, textarea {
+	background-color: var(--background-color); color: var(--color);
+	font: 100%/1.25 system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+}
+
+a {
+	color: var(--link);
+}
+
+textarea {
+	height: 50vh;
+	width: 100%;
+}</textarea>
+			</p>
+			<p>
+				<label for="ic">Color input</label>
+				<input type="color" id="ic" value="#000000">
+			</p>
+			<p>
+				<label for="in">Number input</label>
+				<input type="number" id="in" min="0" max="10" value="5">
+			</p>
+			<p>
+				<label for="ir">Range input</label>
+				<input type="range" id="ir" value="10">
+			</p>
+		</section>
+	</body>
+</html>
